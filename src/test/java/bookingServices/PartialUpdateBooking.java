@@ -15,7 +15,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class PartialUpdateBooking {
-    @BeforeClass
+
     public String createToken ()
     {
         String postData = "{\n" +
@@ -66,7 +66,7 @@ public class PartialUpdateBooking {
 
         String requestBody = new Gson().toJson(partialUpdateRequest);
         given()
-                .log().all().header("Content-Type", "application/json").header("Cookie", createToken()).body(requestBody).
+                .log().all().header("Content-Type", "application/json").cookie("token", createToken()).body(requestBody).
                 when()
                 .patch("https://restful-booker.herokuapp.com/booking/"+createBooking()).
                 then()

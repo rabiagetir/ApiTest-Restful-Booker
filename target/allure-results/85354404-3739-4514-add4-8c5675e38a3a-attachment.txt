@@ -1,8 +1,0 @@
-Urlhttps://restful-booker.herokuapp.com/booking/1
-
-request header=Accept=*/*
-Content-Type=application/json
-
-request body=null
-
-response body={"firstname":"Mary","lastname":"Wilson","totalprice":447,"depositpaid":false,"bookingdates":{"checkin":"2020-07-23","checkout":"2021-11-18"}}

@@ -1,0 +1,17 @@
+request header=Cookie=64e61c166f64a07
+Accept=*/*
+Content-Type=application/json
+
+request body={
+    "firstname" : "James",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}
+
+response body=Not Found

@@ -1,0 +1,3 @@
+Urlhttps://restful-booker.herokuapp.com/booking
+
+response body=[{"bookingid":28},{"bookingid":17},{"bookingid":1},{"bookingid":11},{"bookingid":22},{"bookingid":29},{"bookingid":13},{"bookingid":15},{"bookingid":7},{"bookingid":8},{"bookingid":23},{"bookingid":4},{"bookingid":19},{"bookingid":10},{"bookingid":18},{"bookingid":21},{"bookingid":2},{"bookingid":20},{"bookingid":14},{"bookingid":25},{"bookingid":9},{"bookingid":12},{"bookingid":6},{"bookingid":3},{"bookingid":5},{"bookingid":27},{"bookingid":26},{"bookingid":16},{"bookingid":24}]

@@ -1,0 +1,3 @@
+Urlhttps://restful-booker.herokuapp.com/booking
+
+response body=Unsupported Media Type

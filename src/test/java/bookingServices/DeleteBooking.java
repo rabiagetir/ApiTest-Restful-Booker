@@ -19,7 +19,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class DeleteBooking {
-    @BeforeClass
+
     public String createToken ()
     {
         String postData = "{\n" +
@@ -67,10 +67,10 @@ public class DeleteBooking {
     public void deleteBooking ()
     {
         given()
-                .log().all().header("Content-Type","application/json").header("Cookie", createToken()).
+                .log().all().header("Content-Type","application/json").cookie("token", createToken()).
                 when()
                 .delete("https://restful-booker.herokuapp.com/booking/"+createBooking()).
-                then().statusCode(200)
+                then().statusCode(201)
                 .log().all();
 
     }

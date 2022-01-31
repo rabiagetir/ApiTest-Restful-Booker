@@ -19,7 +19,6 @@ import static io.restassured.RestAssured.given;
 
 public class UpdateBooking {
 
-    @BeforeClass
     public String createToken ()
     {
         String postData = "{\n" +
@@ -77,7 +76,7 @@ public class UpdateBooking {
                 "    },\n" +
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
-        RequestSpecification requestSpecification = RestAssured.given().header("Content-Type", "application/json").header("Cookie", createToken()).body(postData).log().all();
+        RequestSpecification requestSpecification = RestAssured.given().header("Content-Type", "application/json").cookie("token", createToken()).body(postData).log().all();
         Response response = requestSpecification.put("https://restful-booker.herokuapp.com/booking/"+createBooking());
         updateBookingAttachment(requestSpecification, response);
         Assert.assertEquals(response.getStatusCode(), 200);
